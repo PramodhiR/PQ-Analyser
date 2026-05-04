@@ -13,11 +13,13 @@ int main() {
 
     printf("Loaded %d samples\n", n);
 
-    // Print first row (test)
-    printf("First row:\n");
-    printf("Time: %.4f\n", samples[0].timestamp);
-    printf("Phase A: %.2f\n", samples[0].phase_A_voltage);
+    double rmsA = compute_rms(samples, n, 'A');
+    double rmsB = compute_rms(samples, n, 'B');
+    double rmsC = compute_rms(samples, n, 'C');
 
+    printf("RMS A: %.2f\n", rmsA);
+    printf("RMS B: %.2f\n", rmsB);
+    printf("RMS C: %.2f\n", rmsC);
     free(samples);
     return 0;
 }
