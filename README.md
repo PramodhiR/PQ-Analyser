@@ -6,3 +6,4 @@ This project reads CSV files and calculates:
 - DC offset
 - Clipping detection
 - Voltage validation
+- https://github.com/PramodhiR/PQ-Analyser.git
