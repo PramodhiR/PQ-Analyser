@@ -1,8 +1,15 @@
-//
-// Created by my pc on 04/05/2026.
-//
+#ifndef WAVEFORM_H
+#define WAVEFORM_H
 
-#ifndef PQ_ANALYSER_WAVEFORM_H
-#define PQ_ANALYSER_WAVEFORM_H
+typedef struct {
+    double timestamp;
+    double phase_A_voltage;
+    double phase_B_voltage;
+    double phase_C_voltage;
+    double line_current;
+    double frequency;
+    double power_factor;
+    double thd_percent;
+} WaveformSample;
 
-#endif //PQ_ANALYSER_WAVEFORM_H
+#endif
