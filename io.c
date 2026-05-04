@@ -10,7 +10,6 @@ WaveformSample* load_csv(const char *filename, int *n) {
         return NULL;
     }
 
-    // Allocate memory for 1000 rows
     WaveformSample *samples = malloc(1000 * sizeof(WaveformSample));
 
     char line[256];
@@ -35,4 +34,31 @@ WaveformSample* load_csv(const char *filename, int *n) {
 
     fclose(file);
     return samples;
+}
+
+void write_results(const char *filename,
+                   double rmsA, double rmsB, double rmsC,
+                   double p2pA, double p2pB, double p2pC,
+                   double dcA, double dcB, double dcC,
+                   int clipA, int clipB, int clipC) {
+
+    FILE *file = fopen(filename, "w");
+
+    fprintf(file, "=== POWER QUALITY REPORT ===\n\n");
+
+    fprintf(file, "RMS Voltage:\n");
+    fprintf(file, "Phase A: %.2f (%s)\n", rmsA, (rmsA>=207&&rmsA<=253)?"OK":"OUT");
+    fprintf(file, "Phase B: %.2f (%s)\n", rmsB, (rmsB>=207&&rmsB<=253)?"OK":"OUT");
+    fprintf(file, "Phase C: %.2f (%s)\n\n", rmsC, (rmsC>=207&&rmsC<=253)?"OK":"OUT");
+
+    fprintf(file, "Peak-to-Peak:\n");
+    fprintf(file, "A: %.2f\nB: %.2f\nC: %.2f\n\n", p2pA, p2pB, p2pC);
+
+    fprintf(file, "DC Offset:\n");
+    fprintf(file, "A: %.5f\nB: %.5f\nC: %.5f\n\n", dcA, dcB, dcC);
+
+    fprintf(file, "Clipping Count:\n");
+    fprintf(file, "A: %d\nB: %d\nC: %d\n\n", clipA, clipB, clipC);
+
+    fclose(file);
 }
