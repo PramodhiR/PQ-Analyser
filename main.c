@@ -1,17 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "waveform.h"
+#include "io.h"
 
 int main() {
-    FILE *file = fopen("power_quality_log.csv", "r");
 
-    if (!file) {
-        printf("File not found\n");
-        return 1;
-    }
+    int n;
 
-    printf("File opened successfully\n");
+    WaveformSample *samples = load_csv("power_quality_log.csv", &n);
 
-    fclose(file);
+    if (!samples) return 1;
+
+    printf("Loaded %d samples\n", n);
+
+    // Print first row (test)
+    printf("First row:\n");
+    printf("Time: %.4f\n", samples[0].timestamp);
+    printf("Phase A: %.2f\n", samples[0].phase_A_voltage);
+
+    free(samples);
     return 0;
 }

@@ -28,9 +28,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e10269-105a-47b8-946b-aa56cdba2334" name="Changes" comment="load csv into memory---returns array of data and no of rows">
-      <change beforePath="$PROJECT_DIR$/io.c" beforeDir="false" afterPath="$PROJECT_DIR$/io.c" afterDir="false" />
-    </list>
+    <list default="true" id="f2e10269-105a-47b8-946b-aa56cdba2334" name="Changes" comment="read each line of data correcly" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777909942773</updated>
-      <workItem from="1777909946731" duration="3979000" />
+      <workItem from="1777909946731" duration="4288000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project setup with basic file structure">
       <option name="closed" value="true" />
@@ -168,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777913703583</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="read each line of data correcly">
+      <option name="closed" value="true" />
+      <created>1777914100139</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1777914100139</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +226,7 @@
     <MESSAGE value="text file reading" />
     <MESSAGE value="test file read" />
     <MESSAGE value="load csv into memory---returns array of data and no of rows" />
-    <option name="LAST_COMMIT_MESSAGE" value="load csv into memory---returns array of data and no of rows" />
+    <MESSAGE value="read each line of data correcly" />
+    <option name="LAST_COMMIT_MESSAGE" value="read each line of data correcly" />
   </component>
 </project>
