@@ -28,7 +28,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e10269-105a-47b8-946b-aa56cdba2334" name="Changes" comment="read each line of data correcly" />
+    <list default="true" id="f2e10269-105a-47b8-946b-aa56cdba2334" name="Changes" comment="Add function for rms" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777909942773</updated>
-      <workItem from="1777909946731" duration="4288000" />
+      <workItem from="1777909946731" duration="4670000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project setup with basic file structure">
       <option name="closed" value="true" />
@@ -174,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777914100139</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="modified code to loading sampels and checked">
+      <option name="closed" value="true" />
+      <created>1777914376243</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1777914376243</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add function for rms">
+      <option name="closed" value="true" />
+      <created>1777914574237</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1777914574237</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +243,8 @@
     <MESSAGE value="test file read" />
     <MESSAGE value="load csv into memory---returns array of data and no of rows" />
     <MESSAGE value="read each line of data correcly" />
-    <option name="LAST_COMMIT_MESSAGE" value="read each line of data correcly" />
+    <MESSAGE value="modified code to loading sampels and checked" />
+    <MESSAGE value="Add function for rms" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add function for rms" />
   </component>
 </project>

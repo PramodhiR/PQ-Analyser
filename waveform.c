@@ -1,3 +1,25 @@
 //
-// Created by my pc on 04/05/2026.
-//
+// Created by my pc on 04/05/20
+#include <math.h>
+#include "waveform.h"
+
+// Helper function
+double get_voltage(WaveformSample s, char phase) {
+    if (phase == 'A') return s.phase_A_voltage;
+    if (phase == 'B') return s.phase_B_voltage;
+    return s.phase_C_voltage;
+}
+
+double compute_rms(WaveformSample *samples, int n, char phase) {
+
+    double sum = 0.0;
+
+    for (int i = 0; i < n; i++) {
+        double v = get_voltage(samples[i], phase);
+        sum += v * v;   // square and add
+    }
+
+    double rms = sqrt(sum / n);
+
+    return rms;
+}
