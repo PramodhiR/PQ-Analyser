@@ -62,4 +62,7 @@ int count_clipped(WaveformSample *samples, int n, char phase) {
     }
 
     return count;
+}// voltage check
+int check_compliance(double rms) {
+    return (rms >= 207 && rms <= 253);
 }

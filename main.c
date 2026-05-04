@@ -63,8 +63,11 @@ int main() {
     printf("A: %d\n", clipA);
     printf("B: %d\n", clipB);
     printf("C: %d\n\n", clipC);
-
-
+// voltage check
+    printf("Compliance:\n");
+    printf("A: %s\n", check_compliance(rmsA) ? "OK" : "OUT OF RANGE");
+    printf("B: %s\n", check_compliance(rmsB) ? "OK" : "OUT OF RANGE");
+    printf("C: %s\n\n", check_compliance(rmsC) ? "OK" : "OUT OF RANGE");
 
 
     // Free memory
