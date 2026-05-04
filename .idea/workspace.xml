@@ -28,8 +28,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e10269-105a-47b8-946b-aa56cdba2334" name="Changes" comment="Added csv file">
-      <change beforePath="$PROJECT_DIR$/waveform.h" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.h" afterDir="false" />
+    <list default="true" id="f2e10269-105a-47b8-946b-aa56cdba2334" name="Changes" comment="test file read">
+      <change beforePath="$PROJECT_DIR$/io.h" beforeDir="false" afterPath="$PROJECT_DIR$/io.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777909942773</updated>
-      <workItem from="1777909946731" duration="2956000" />
+      <workItem from="1777909946731" duration="3573000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project setup with basic file structure">
       <option name="closed" value="true" />
@@ -128,7 +128,39 @@
       <option name="project" value="LOCAL" />
       <updated>1777912180324</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create struct">
+      <option name="closed" value="true" />
+      <created>1777912997410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777912997410</updated>
+    </task>
+    <task id="LOCAL-00004" summary="text file reading">
+      <option name="closed" value="true" />
+      <created>1777913157701</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777913157701</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test file read">
+      <option name="closed" value="true" />
+      <created>1777913261134</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777913261134</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test file read">
+      <option name="closed" value="true" />
+      <created>1777913281029</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1777913281029</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +207,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial project setup with basic file structure" />
     <MESSAGE value="Added csv file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added csv file" />
+    <MESSAGE value="create struct" />
+    <MESSAGE value="test file reading" />
+    <MESSAGE value="text file reading" />
+    <MESSAGE value="test file read" />
+    <option name="LAST_COMMIT_MESSAGE" value="test file read" />
   </component>
 </project>

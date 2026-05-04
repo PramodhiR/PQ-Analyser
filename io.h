@@ -1,8 +1,8 @@
-//
-// Created by my pc on 04/05/2026.
-//
+#ifndef IO_H
+#define IO_H
 
-#ifndef PQ_ANALYSER_IO_H
-#define PQ_ANALYSER_IO_H
+#include "waveform.h"
 
-#endif //PQ_ANALYSER_IO_H
+WaveformSample* load_csv(const char *filename, int *n);
+
+#endif
