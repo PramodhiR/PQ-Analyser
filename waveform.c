@@ -38,3 +38,13 @@ double compute_peak_to_peak(WaveformSample *samples, int n, char phase) {
 
     return max - min;
 }
+double compute_dc_offset(WaveformSample *samples, int n, char phase) {
+
+    double sum = 0.0;
+
+    for (int i = 0; i < n; i++) {
+        sum += get_voltage(samples[i], phase);
+    }
+
+    return sum / n;
+}

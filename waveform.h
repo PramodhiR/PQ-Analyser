@@ -15,8 +15,8 @@ typedef struct {
 double compute_rms(WaveformSample *samples, int n, char phase);
 // PEAK TO PEAK
 double compute_peak_to_peak(WaveformSample *samples, int n, char phase);
-
-
+//DC offset
+double compute_dc_offset(WaveformSample *samples, int n, char phase);
 
 
 

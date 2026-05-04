@@ -44,9 +44,16 @@ int main() {
     printf("B: %.2f V\n", p2pB);
     printf("C: %.2f V\n\n", p2pC);
 
+// DC OFFSET
 
+    double dcA = compute_dc_offset(samples, n, 'A');
+    double dcB = compute_dc_offset(samples, n, 'B');
+    double dcC = compute_dc_offset(samples, n, 'C');
 
-
+    printf("DC Offset:\n");
+    printf("A: %.5f V\n", dcA);
+    printf("B: %.5f V\n", dcB);
+    printf("C: %.5f V\n\n", dcC);
 
 
 
