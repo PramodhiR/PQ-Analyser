@@ -69,6 +69,15 @@ int main() {
     printf("B: %s\n", check_compliance(rmsB) ? "OK" : "OUT OF RANGE");
     printf("C: %s\n\n", check_compliance(rmsC) ? "OK" : "OUT OF RANGE");
 
+//Write Results
+
+    write_results("results.txt",
+               rmsA, rmsB, rmsC,
+               p2pA, p2pB, p2pC,
+               dcA, dcB, dcC,
+               clipA, clipB, clipC);
+
+
 
     // Free memory
     free(samples);
