@@ -11,5 +11,13 @@ typedef struct {
     double power_factor;
     double thd_percent;
 } WaveformSample;
+// add function for RMS
+double compute_rms(WaveformSample *samples, int n, char phase);
+
+
+
+
+
+
 
 #endif
