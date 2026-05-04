@@ -17,7 +17,7 @@ double compute_rms(WaveformSample *samples, int n, char phase);
 double compute_peak_to_peak(WaveformSample *samples, int n, char phase);
 //DC offset
 double compute_dc_offset(WaveformSample *samples, int n, char phase);
-
-
+// CLIPPING
+int count_clipped(WaveformSample *samples, int n, char phase);
 
 #endif

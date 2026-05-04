@@ -48,3 +48,18 @@ double compute_dc_offset(WaveformSample *samples, int n, char phase) {
 
     return sum / n;
 }
+
+int count_clipped(WaveformSample *samples, int n, char phase) {
+
+    int count = 0;
+
+    for (int i = 0; i < n; i++) {
+        double v = get_voltage(samples[i], phase);
+
+        if (fabs(v) >= 324.9) {
+            count++;
+        }
+    }
+
+    return count;
+}

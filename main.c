@@ -54,8 +54,15 @@ int main() {
     printf("A: %.5f V\n", dcA);
     printf("B: %.5f V\n", dcB);
     printf("C: %.5f V\n\n", dcC);
+//CLIPPING DETECTION
+    int clipA = count_clipped(samples, n, 'A');
+    int clipB = count_clipped(samples, n, 'B');
+    int clipC = count_clipped(samples, n, 'C');
 
-
+    printf("Clipping Count:\n");
+    printf("A: %d\n", clipA);
+    printf("B: %d\n", clipB);
+    printf("C: %d\n\n", clipC);
 
 
 
