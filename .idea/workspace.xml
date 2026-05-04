@@ -28,7 +28,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e10269-105a-47b8-946b-aa56cdba2334" name="Changes" comment="Add function for rms" />
+    <list default="true" id="f2e10269-105a-47b8-946b-aa56cdba2334" name="Changes" comment="modified and got RMS VALUES">
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waveform.c" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waveform.h" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777909942773</updated>
-      <workItem from="1777909946731" duration="4670000" />
+      <workItem from="1777909946731" duration="5409000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project setup with basic file structure">
       <option name="closed" value="true" />
@@ -190,7 +194,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777914574237</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add function for rms">
+      <option name="closed" value="true" />
+      <created>1777914722030</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1777914722030</updated>
+    </task>
+    <task id="LOCAL-00012" summary="modified and got RMS VALUES">
+      <option name="closed" value="true" />
+      <created>1777914944365</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1777914944365</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +265,7 @@
     <MESSAGE value="read each line of data correcly" />
     <MESSAGE value="modified code to loading sampels and checked" />
     <MESSAGE value="Add function for rms" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add function for rms" />
+    <MESSAGE value="modified and got RMS VALUES" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified and got RMS VALUES" />
   </component>
 </project>

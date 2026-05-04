@@ -11,10 +11,10 @@ typedef struct {
     double power_factor;
     double thd_percent;
 } WaveformSample;
-// add function for RMS
+// RMS
 double compute_rms(WaveformSample *samples, int n, char phase);
-
-
+// PEAK TO PEAK
+double compute_peak_to_peak(WaveformSample *samples, int n, char phase);
 
 
 

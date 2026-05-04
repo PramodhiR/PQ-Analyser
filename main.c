@@ -7,19 +7,54 @@ int main() {
 
     int n;
 
+    // Load CSV data
     WaveformSample *samples = load_csv("power_quality_log.csv", &n);
 
-    if (!samples) return 1;
+    if (!samples) {
+        printf("Error loading data\n");
+        return 1;
+    }
 
-    printf("Loaded %d samples\n", n);
+    printf("Loaded %d samples\n\n", n);
+
+    // Show first row (just to confirm data is correct)
+    printf("First row:\n");
+    printf("Time: %.4f\n", samples[0].timestamp);
+    printf("Phase A: %.2f\n\n", samples[0].phase_A_voltage);
+
+
+    // RMS CALCULATIONS
 
     double rmsA = compute_rms(samples, n, 'A');
     double rmsB = compute_rms(samples, n, 'B');
     double rmsC = compute_rms(samples, n, 'C');
 
-    printf("RMS A: %.2f\n", rmsA);
-    printf("RMS B: %.2f\n", rmsB);
-    printf("RMS C: %.2f\n", rmsC);
+    printf("RMS Values:\n");
+    printf("Phase A: %.2f V\n", rmsA);
+    printf("Phase B: %.2f V\n", rmsB);
+    printf("Phase C: %.2f V\n\n", rmsC);
+// Peak to Peak
+
+    double p2pA = compute_peak_to_peak(samples, n, 'A');
+    double p2pB = compute_peak_to_peak(samples, n, 'B');
+    double p2pC = compute_peak_to_peak(samples, n, 'C');
+
+    printf("Peak-to-Peak:\n");
+    printf("A: %.2f V\n", p2pA);
+    printf("B: %.2f V\n", p2pB);
+    printf("C: %.2f V\n\n", p2pC);
+
+
+
+
+
+
+
+
+
+
+    // Free memory
     free(samples);
+
     return 0;
 }
